@@ -1,0 +1,95 @@
+.language-selector {
+  position: relative;
+  display: inline-block;
+  font-family: var(--font-family-base);
+}
+
+.language-button {
+  padding: 0.4rem 0.6rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: var(--font-base);
+  transition: var(--transition);
+}
+
+.language-dropdown {
+  box-sizing: border-box;
+  position: absolute;
+  top: 110%;
+  left: 0;
+  margin-top: 0.3rem;
+  border-radius: 0.5rem;
+  z-index: 1000;
+  width: 240px;
+  padding: 0.75rem;
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+}
+
+.language-dropdown.align-right {
+  left: auto;
+  right: 0; /* Alinha à direita do botão */
+}
+
+.language-search {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.4rem;
+  border: 1px solid var(--color-border);
+  font-family: var(--font-family-base);
+  font-size: var(--font-sm);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  transition: var(--transition);
+}
+
+.language-search:focus {
+  outline: none;
+  border-color: var(--color-border-focus);
+}
+
+.language-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+.language-option {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  font-size: var(--font-sm);
+  color: var(--color-text);
+  transition: var(--transition);
+}
+
+.language-option:hover {
+  background-color: var(--color-hover-bg);
+}
+
+.language-flag {
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji",
+    sans-serif;
+  font-size: var(--font-base);
+  line-height: 1;
+}
+
+@media (max-width: 480px) {
+  .language-dropdown {
+    left: 50%;
+    right: auto !important;
+    transform: translateX(-50%);
+    width: 90vw;
+    max-width: 300px;
+  }
+}

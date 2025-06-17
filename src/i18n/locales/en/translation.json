@@ -1,0 +1,11 @@
+{
+    "Navbar": {
+        "Home": "Home",
+        "Services": "Services",
+        "Portfolio": "Portfolio",
+        "About": "About",
+        "Contact": "Bugdet/Contact",
+        "Login": "Login",
+        "Logout": "Logout"
+    }
+}

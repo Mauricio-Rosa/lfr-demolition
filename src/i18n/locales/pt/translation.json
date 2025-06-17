@@ -1,0 +1,11 @@
+{
+    "Navbar": {
+        "Home": "Início",
+        "Services": "serviços",
+        "Portfolio": "Portfolio",
+        "About": "Sobre",
+        "Contact": "Orçamento/Contato",
+        "Login": "Entrar",
+        "Logout": "Sair"
+    }
+}

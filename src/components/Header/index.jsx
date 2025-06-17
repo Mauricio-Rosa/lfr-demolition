@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
-import './styles.css';
 import logo from '@/assets/images/logo.png';
+import LanguageSelector from '@/components/LanguageSelector';
+
+import './styles.css';
 
 export default function Header() {
   const [theme, setTheme] = useState('light');
@@ -28,19 +30,24 @@ export default function Header() {
 
   return (
     <header className="header">
+      <div className="header-side"></div> {/* espaço flexível à esquerda */}
+
       <img className="img-logo" src={logo} alt="logo" />
 
-      <label className="switch" aria-label="Alternar tema claro e escuro">
-        <input
-          type="checkbox"
-          checked={theme === 'dark'}
-          onChange={toggleTheme}
-        />
-        <span className="slider">
-          <MdOutlineLightMode className="icon light-icon" size={20} />
-          <MdOutlineDarkMode className="icon dark-icon" size={20} />
-        </span>
-      </label>
+      <div className="header-right">
+        <LanguageSelector className="language-selector" />
+        <label className="switch" aria-label="Alternar tema claro e escuro">
+          <input
+            type="checkbox"
+            checked={theme === 'dark'}
+            onChange={toggleTheme}
+          />
+          <span className="slider">
+            <MdOutlineLightMode className="icon light-icon" size={20} />
+            <MdOutlineDarkMode className="icon dark-icon" size={20} />
+          </span>
+        </label>
+      </div>
     </header>
   );
 }
