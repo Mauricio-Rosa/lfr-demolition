@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Poppins:wght@400;600&display=swap");
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Fontes principais */
+  --font-family-base: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-family-heading: "Poppins", sans-serif;
+  --font-size-base: clamp(1rem, 2vw, 1.125rem);
+
+  /* Tamanhos de fonte */
+  --font-xs: clamp(0.75rem, 1.5vw, 0.875rem);
+  --font-sm: clamp(0.875rem, 2vw, 1rem);
+  --font-base: clamp(1rem, 2.5vw, 1.125rem);
+  --font-lg: clamp(1.125rem, 3vw, 1.25rem);
+  --font-xl: clamp(1.25rem, 4vw, 1.5rem);
+  --font-2xl: clamp(1.5rem, 5vw, 1.875rem);
+  --font-3xl: clamp(1.875rem, 6vw, 2.25rem);
+
+  /* Pesos */
+  --font-light: 300;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-bold: 700;
+
+  /* === Cores primárias (tema LFR Demolition) === */
+  --color-primary: #FCC236;
+  --color-primary-dark: #d2a12e;
+  --color-primary-light: #f5e7e0;
+
+  /* === Tema claro (padrão) === */
+  --color-bg: #f0f0f0;
+  --color-bg-button: #FCC236;
+  --color-text: #1e1e1e;
+  --color-text-link: #FCC236;
+  --color-text-button: #ffffff;
+  --color-text-light: #ffffff;
+  --color-muted: #7e8a97;
+  --color-border: #b0b0b0;
+  --color--focus: #7e8a97;
+  --color-border-focus: #FCC236;
+  --color-accent: #f5e7e0;
+  --color-hover: #d2a12e;
+  --color-hover-bg: #f5e7e0;
+
+/* === Feedback === */
+--color-info: #7E8A97;
+--color-success: #35c20a;
+--color-error: #dc2626;
+--color-warning: #facc15;
+
+  /* Atributo nativo de sugestão, pode ser mantido */
+  color-scheme: light;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+
+  /* Transições para suavizar troca de tema */
+  --transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease;
+
+  /* Sombra */
+  --box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] {
+  --color-primary: #2C2F33;
+  --color-bg: #1E1E1E;
+  --color-bg-button: #2C2F33;
+  --color-text: #E4E4E7;
+  --color-text-link: #FACC15;
+  --color-text-button: #FFFFFF;
+  --color-muted: #A1A1AA;
+  --color-border: #3A3A3A;
+  --color--focus: #444;
+  --color-border-focus: #d2a12e;
+  --color-accent: #2C2F33;
+  --color-hover: #FACC15;
+  --color-hover-bg: #333333;
+
+  color-scheme: dark;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+
+  transition: var(--transition);
+}
+
+/* Aplica transição suave para body e html, que recebem as cores base */
+html,
+body {
+  transition: var(--transition);
+}

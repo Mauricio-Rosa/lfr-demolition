@@ -1,0 +1,14 @@
+/*
+    Informa ao VS Code e outras ferramentas que @/ é um alias para src/.
+    Assim, quando você importar algo como @/components/Button, o VS Code já entende e ajuda com autocomplete e navegação.
+    Sem isso, o VS Code vai reclamar ou não reconhecer o alias, mesmo que o Vite compile normalmente.
+*/
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist"]
+}

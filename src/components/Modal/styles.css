@@ -1,0 +1,142 @@
+/* Estilos globais para o modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 80%;
+  position: relative;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+}
+
+/* Estilos globais para o modal */
+.modal-title svg {
+  margin-right: 0.5rem;
+  color: inherit; /* Cor herdada da criticidade */
+  font-size: var(--font-xl);
+}
+
+.modal-close svg {
+  font-size: var(--font-lg);
+  color: var(--color-text);
+  transition: var(--transition);
+}
+
+.modal-close svg:hover {
+  color: var(--color-primary-dark);
+}
+
+/* Estilos para diferentes níveis de criticidade */
+.modal-info {
+  border-left: 12px solid var(--color-info);
+}
+
+.modal-warning {
+  border-left: 12px solid var(--color-warning); /* Cor de aviso */
+}
+
+.modal-error {
+  border-left: 12px solid var(--color-error); /* Cor de erro */
+}
+
+.modal-success {
+  border-left: 12px solid var(--color-success); /* Cor de sucesso */
+}
+
+/* Define a cor do título e ícone com base na criticidade */
+.modal-info .modal-title,
+.modal-info .modal-title svg {
+  color: var(--color-info);
+}
+
+.modal-warning .modal-title,
+.modal-warning .modal-title svg {
+  color: var(--color-warning); /* Cor de aviso */
+}
+
+.modal-error .modal-title,
+.modal-error .modal-title svg {
+  color: var(--color-error); /* Cor de erro */
+}
+
+.modal-success .modal-title,
+.modal-success .modal-title svg {
+  color: var(--color-success); /* Cor de sucesso */
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: var(--font-xl);
+  color: var(--color-text);
+}
+
+.modal-title {
+  margin-bottom: 1rem;
+  font-size: var(--font-2xl);
+}
+
+.modal-body {
+  line-height: 1.5;
+  font-size: var(--font-base);
+}
+
+.modal-content {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+  .modal-content {
+    padding: 1.5rem;
+  }
+
+  .modal-title {
+    font-size: var(--font-xl);
+  }
+
+  .modal-body {
+    font-size: var(--font-sm);
+  }
+}
