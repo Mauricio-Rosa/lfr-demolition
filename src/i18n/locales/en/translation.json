@@ -15,5 +15,43 @@
     "Services_description": "Discover how we support companies with tech and efficiency.",
     "Portifolio_description": "Projects that showcase our capabilities and results.",
     "Budget_description": "Request a custom quote tailored to your needs."
+  },
+  "Footer": {
+    "Name": "Leave the hard work to us",
+    "Contact": {
+      "Title": "Contact Us",
+      "Description": "Have questions or need assistance? Reach out to us anytime."
+    },
+    "Legal": {
+      "Terms": "Terms of Service",
+      "Privacy": "All rights reserved"
+    }
+  },
+  "Funnels": {
+    "Services": {
+      "Title": "What We Do",
+      "Description": "Explore our full range of demolition and floor removal services, tailored for residential and commercial projects.",
+      "Button": "See More"
+    },
+    "Budget": {
+      "Title": "Get a Free Estimate",
+      "Description": "Planning a project? Let’s talk. Request a fast, no-obligation quote customized to your needs.",
+      "Button": "Request Quote"
+    },
+    "Portfolio": {
+      "Title": "Our Work",
+      "Description": "Browse our portfolio to see the quality and variety of our demolition projects.",
+      "Button": "View Portfolio"
+    }
+  },
+  "SearchInput": {
+    "Placeholder": "Search articles...",
+    "Text": "Search"
+  },
+  "Article":{
+    "Title": "Title not found",
+    "Date": "Date not informed",
+    "SeeMore": "See more",
+    "SeeLess": "See less"
   }
 }

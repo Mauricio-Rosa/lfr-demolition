@@ -123,6 +123,51 @@
   font-size: var(--font-xs);
 }
 
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: zoom-out;
+}
+
+.modal-carousel {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left); /* compatível com iPhones com notch */
+}
+
+.swiper-fullscreen {
+  width: 100%;
+  height: 100%;
+  pointer-events: all;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-image {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  display: block;
+  margin: auto;
+}
+
+/* Swiper arrows visíveis */
+.swiper-button-next,
+.swiper-button-prev {
+  color: white;
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
   .article {
@@ -136,5 +181,32 @@
 
   .article-image {
     width: 80%;
+  }
+  .modal-carousel {
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-fullscreen {
+    flex-direction: column;
+  }
+
+  .modal-image {
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+    object-fit: contain;
+    margin: auto;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none; /* usa apenas swipe no mobile */
+  }
+
+  .swiper-pagination-bullets {
+    bottom: 20px;
   }
 }

@@ -88,6 +88,7 @@
 
 .funnels {
   margin-top: 3rem;
+  margin-bottom: 1rem;
   display: grid;
   gap: 1.5rem;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -97,7 +98,8 @@
   padding: 1.5rem;
   border-radius: 1rem;
   text-align: center;
-  background-color: var(--color-accent);
+  outline: 1px solid var(--color-border);
+  background-color: var(--color-bg);
   box-shadow: var(--box-shadow);
   transition: var(--transition);
 }

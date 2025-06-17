@@ -15,5 +15,43 @@
     "Services_description": "Veja como ajudamos empresas com tecnologia e eficiência.",
     "Portifolio_description": "Projetos que demonstram nossa capacidade e resultados.",
     "Budget_description": "Solicite um orçamento personalizado para sua demanda."
+  },
+  "Footer": {
+    "Name": "Deixe o trabalho pesado conosco",
+    "Contact": {
+      "Title": "Fale Conosco",
+      "Description": "Tem dúvidas ou precisa de ajuda? Entre em contato conosco a qualquer momento."
+    },
+    "Legal": {
+      "Terms": "Termos de Serviço",
+      "Privacy": "Todos os direitos reservados"
+    }
+  },
+  "Funnels": {
+    "Services": {
+      "Title": "O Que Fazemos",
+      "Description": "Explore nossa linha completa de serviços de demolição e remoção de pisos, personalizados para projetos residenciais e comerciais.",
+      "Button": "Ver Mais"
+    },
+    "Budget": {
+      "Title": "Solicite um Orçamento Gratuito",
+      "Description": "Planejando um projeto? Fale com a gente. Peça um orçamento rápido, sem compromisso e sob medida.",
+      "Button": "Solicitar Orçamento"
+    },
+    "Portfolio": {
+      "Title": "Nossos Projetos",
+      "Description": "Conheça nosso portfólio e veja a qualidade e variedade dos projetos de demolição que já realizamos.",
+      "Button": "Ver Portfólio"
+    }
+  },
+  "SearchInput": {
+    "Placeholder": "Pesquisar artigos...",
+    "Text": "Pesquisar"
+  },
+  "Article": {
+    "Title": "Título não encontrado",
+    "Date": "Data não informada",
+    "SeeMore": "ver mais",
+    "SeeLess": "ver menos"
   }
 }

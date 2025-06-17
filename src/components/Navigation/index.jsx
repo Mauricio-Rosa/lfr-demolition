@@ -31,15 +31,15 @@ function Navigation() {
           </Link>
         </li>
         <li className="nav-item">
-          <Link to={ROUTES.ABOUT.path} className="nav-link">
-            <GrUserWorker className="nav-icon" />
-            <span className="nav-label">{t("Navbar.About")}</span>
+          <Link to={ROUTES.BUDGET.path} className="nav-link">
+            <MdAttachMoney className="nav-icon" />
+            <span className="nav-label">{t("Navbar.Budget")}</span>
           </Link>
         </li>
         <li className="nav-item">
-          <Link to={ROUTES.BUDGETCONTACT.path} className="nav-link">
-            <MdAttachMoney className="nav-icon" />
-            <span className="nav-label">{t("Navbar.Contact")}</span>
+          <Link to={ROUTES.ABOUT.path} className="nav-link">
+            <GrUserWorker className="nav-icon" />
+            <span className="nav-label">{t("Navbar.About")}</span>
           </Link>
         </li>
       </ul>

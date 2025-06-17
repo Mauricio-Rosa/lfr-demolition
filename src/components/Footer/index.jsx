@@ -1,12 +1,14 @@
 import './styles.css';
+import { useTranslation } from "react-i18next";
 import LINKS from "@/constants/ExternalLinks";
 import { FaLinkedin, FaGithub, FaEnvelope, FaWhatsapp, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
+    const { t } = useTranslation();
   return (
     <footer className="footer">
       <div className="footer-content">
-        <p className="footer-name">Leave the hard work to us</p>
+        <p className="footer-name">{t("Footer.Name")}</p>
         
         <div className="footer-social">
           <a href={LINKS.WHATSAPP} target="_blank" rel="noopener noreferrer" aria-label="Whatsapp">
@@ -27,7 +29,7 @@ export default function Footer() {
         </div>
         
         <p className="footer-copy">
-          © {new Date().getFullYear()} All rights reserved. LFR Demolition
+          © {new Date().getFullYear()} {t("Footer.Legal.Privacy")}
         </p>
       </div>
     </footer>

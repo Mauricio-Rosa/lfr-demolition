@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import Button from "@/components/Button";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 import "./styles.css";
 
 function SearchInput() {
   const [searchTerm, setSearchTerm] = useState("");
+  const { t } = useTranslation();
   const navigate = useNavigate();
 
   const handleInputChange = (event) => {
@@ -56,11 +58,11 @@ function SearchInput() {
         value={searchTerm}
         onChange={handleInputChange}
         onKeyDown={handleKeyDown}
-        placeholder="Digite para pesquisar..."
+        placeholder= {t("SearchInput.Placeholder")}
       />
       <Button
                   type = 'button'
-                  text= "Pesquisar"
+                  text= {t("SearchInput.Text")}
                   onClick={handleSearch}
                   />
     </div>

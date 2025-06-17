@@ -31,30 +31,30 @@
   --font-bold: 700;
 
   /* === Cores primárias (tema LFR Demolition) === */
-  --color-primary: #FCC236;
+  --color-primary: #fcc236;
   --color-primary-dark: #d2a12e;
   --color-primary-light: #f5e7e0;
 
   /* === Tema claro (padrão) === */
   --color-bg: #f0f0f0;
-  --color-bg-button: #FCC236;
+  --color-bg-button: #fcc236;
   --color-text: #1e1e1e;
-  --color-text-link: #FCC236;
+  --color-text-link: #fcc236;
   --color-text-button: #ffffff;
   --color-text-light: #ffffff;
   --color-muted: #7e8a97;
   --color-border: #b0b0b0;
   --color--focus: #7e8a97;
-  --color-border-focus: #FCC236;
+  --color-border-focus: #fcc236;
   --color-accent: #f5e7e0;
   --color-hover: #d2a12e;
   --color-hover-bg: #f5e7e0;
 
-/* === Feedback === */
---color-info: #7E8A97;
---color-success: #35c20a;
---color-error: #dc2626;
---color-warning: #facc15;
+  /* === Feedback === */
+  --color-info: #7e8a97;
+  --color-success: #35c20a;
+  --color-error: #dc2626;
+  --color-warning: #facc15;
 
   /* Atributo nativo de sugestão, pode ser mantido */
   color-scheme: light;
@@ -67,22 +67,37 @@
 
   /* Sombra */
   --box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+
+  --video-primary: #fcc236;
+  --video-bg: #000000;
+  --video-overlay: rgba(0, 0, 0, 0.4);
+  --video-text: #ffffff;
+  --video-shadow: rgba(0, 0, 0, 0.3);
+  --video-radius: 12px;
+  --video-transition: all 0.3s ease;
+  --video-controls-height: 48px;
+  --video-title-height: 48px;
+  --video-icon-size: 64px;
 }
 
 [data-theme="dark"] {
-  --color-primary: #2C2F33;
-  --color-bg: #1E1E1E;
-  --color-bg-button: #2C2F33;
-  --color-text: #E4E4E7;
-  --color-text-link: #FACC15;
-  --color-text-button: #FFFFFF;
-  --color-muted: #A1A1AA;
-  --color-border: #3A3A3A;
+  --color-primary: #2c2f33;
+  --color-bg: #1e1e1e;
+  --color-bg-button: #2c2f33;
+  --color-text: #e4e4e7;
+  --color-text-link: #facc15;
+  --color-text-button: #ffffff;
+  --color-muted: #a1a1aa;
+  --color-border: #3a3a3a;
   --color--focus: #444;
   --color-border-focus: #d2a12e;
-  --color-accent: #2C2F33;
-  --color-hover: #FACC15;
+  --color-accent: #2c2f33;
+  --color-hover: #facc15;
   --color-hover-bg: #333333;
+  --video-primary: #3498db;
+  --video-bg: #1a1a1a;
+  --video-overlay: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
 
   color-scheme: dark;
   color: var(--color-text);

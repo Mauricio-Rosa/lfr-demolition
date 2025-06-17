@@ -2,7 +2,7 @@ import Home from "@/pages/Home";
 import About from "@/pages/About";
 import Services from "@/pages/Services";
 import Portifolio from "@/pages/Portifolio";
-import BudgetContact from "@/pages/Budget";
+import Budget from "@/pages/Budget";
 
 // Rotas centralizadas
 const ROUTES = {
@@ -26,10 +26,10 @@ const ROUTES = {
     element: <Portifolio />,
     label: "Portifolio",
   },
-  BUDGETCONTACT: {
-    path: "/BudgetContact",
-    element: <BudgetContact />,
-    label: "BudgetContact",
+  BUDGET: {
+    path: "/budget",
+    element: <Budget />,
+    label: "Budget",
   },
   LOGOUT: {
     path: "/logout",
