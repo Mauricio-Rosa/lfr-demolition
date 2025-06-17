@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mauricio-rosa.github.io/lfr-demolition/sitemap.xml

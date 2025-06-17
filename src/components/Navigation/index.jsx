@@ -1,8 +1,9 @@
-import { Link } from "react-router-dom";
 import './styles.css';
-import { FaUserGraduate, FaTools, FaCode } from "react-icons/fa";
-import { SiRockwellautomation } from "react-icons/si";
-import { IoCallSharp } from "react-icons/io5";
+import { Link } from "react-router-dom";
+import { FaHome , FaTools } from "react-icons/fa";
+import { GiDemolish } from "react-icons/gi";
+import { GrUserWorker } from "react-icons/gr";
+import { MdAttachMoney } from "react-icons/md";
 import ROUTES from "@/routes/routes";
 import { useTranslation } from "react-i18next";
 
@@ -13,31 +14,31 @@ function Navigation() {
       <ul className="nav-list">
         <li className="nav-item">
           <Link to={ROUTES.HOME.path} className="nav-link">
-            <FaUserGraduate className="nav-icon" />
+            <FaHome  className="nav-icon" />
             <span className="nav-label">{t("Navbar.Home")}</span>
           </Link>
         </li>
         <li className="nav-item">
           <Link to={ROUTES.SERVICES.path} className="nav-link">
-            <SiRockwellautomation className="nav-icon" />
+            <FaTools className="nav-icon" />
             <span className="nav-label">{t("Navbar.Services")}</span>
           </Link>
         </li>
         <li className="nav-item">
           <Link to={ROUTES.PORTIFOLIO.path} className="nav-link">
-            <FaTools className="nav-icon" />
+            <GiDemolish className="nav-icon" />
             <span className="nav-label">{t("Navbar.Portfolio")}</span>
           </Link>
         </li>
         <li className="nav-item">
           <Link to={ROUTES.ABOUT.path} className="nav-link">
-            <FaCode className="nav-icon" />
+            <GrUserWorker className="nav-icon" />
             <span className="nav-label">{t("Navbar.About")}</span>
           </Link>
         </li>
         <li className="nav-item">
           <Link to={ROUTES.BUDGETCONTACT.path} className="nav-link">
-            <IoCallSharp className="nav-icon" />
+            <MdAttachMoney className="nav-icon" />
             <span className="nav-label">{t("Navbar.Contact")}</span>
           </Link>
         </li>

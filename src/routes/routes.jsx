@@ -2,7 +2,7 @@ import Home from "@/pages/Home";
 import About from "@/pages/About";
 import Services from "@/pages/Services";
 import Portifolio from "@/pages/Portifolio";
-import BudgetContact from "@/pages/BudgetContact";
+import BudgetContact from "@/pages/Budget";
 
 // Rotas centralizadas
 const ROUTES = {

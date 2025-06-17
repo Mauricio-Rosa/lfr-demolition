@@ -1,11 +1,19 @@
 {
-    "Navbar": {
-        "Home": "Home",
-        "Services": "Services",
-        "Portfolio": "Portfolio",
-        "About": "About",
-        "Contact": "Bugdet/Contact",
-        "Login": "Login",
-        "Logout": "Logout"
-    }
+  "Navbar": {
+    "Home": "Home",
+    "Services": "Services",
+    "Portfolio": "Portfolio",
+    "About": "About",
+    "Budget": "Bugdet",
+    "Login": "Login",
+    "Logout": "Logout"
+  },
+  "Header": {
+    "Title": "LFR Demolition",
+    "Home_description": "Smart solutions for demolition and technical logistics.",
+    "About_description": "Learn about our story, purpose, and industry experience.",
+    "Services_description": "Discover how we support companies with tech and efficiency.",
+    "Portifolio_description": "Projects that showcase our capabilities and results.",
+    "Budget_description": "Request a custom quote tailored to your needs."
+  }
 }

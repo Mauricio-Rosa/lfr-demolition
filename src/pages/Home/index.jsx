@@ -2,6 +2,7 @@
 import "./styles.css";
 import { useNavigate } from "react-router-dom";
 import React, { useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 import useHelmetMeta from "@/hooks/useHelmetMeta";
 
 import PI from "@/constants/personalInfo";
@@ -12,14 +13,14 @@ import { getExperienceTime } from "@/utils/experienceCounter";
 import Button from "@/components/Button";
 
 function Home() {
+  const { t } = useTranslation();
   const experience = getExperienceTime();
   const imgRef = useRef(null);
   const navigate = useNavigate();
 
   const helmet = useHelmetMeta({
-    title: "About | Mauricio F.R.",
-    description:
-      "Conheça a trajetória profissional de Maurício Freire Rosa, especialista em automação, engenharia elétrica e desenvolvimento de soluções digitais com Python, javascript, React e Power Platform.",
+    title: `${t("Navbar.Home")} | ${t("Header.Title")}`,
+    description:t("Header.Home_description"),
   });
 
   useEffect(() => {

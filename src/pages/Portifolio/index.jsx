@@ -1,13 +1,14 @@
 // src/pages/Automacao/index.jsx
+import { useTranslation } from "react-i18next";
 import useHelmetMeta from "@/hooks/useHelmetMeta";
 import Article from "@/components/Article";
 import "./styles.css";
 
 function Portifolio() {
+  const { t } = useTranslation();
     const helmet = useHelmetMeta({
-    title: "Programming | Mauricio F.R.",
-    description:
-      "Conheça a trajetória profissional de Maurício Freire Rosa, especialista em automação, engenharia elétrica e desenvolvimento de soluções digitais com Python, javascript, React e Power Platform.",
+    title: `${t("Navbar.Portifolio")} | ${t("Header.Title")}`,
+    description:t("Header.Portifolio_description"),
   });
   return (
     <>

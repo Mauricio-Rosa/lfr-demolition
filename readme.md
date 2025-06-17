@@ -110,3 +110,33 @@ VITE_EMAILJS_TEMPLATE_ID=seu_template_id
 ## 📝 Licença
 
 Este projeto está sob a licença MIT.
+
+# 🌐 LFR Demolition – Site institucional
+
+Este repositório contém o código-fonte do site da LFR Demolition, desenvolvido em **React + Vite** e hospedado via **GitHub Pages**.
+
+## 🚀 Tecnologias
+
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [React Router DOM](https://reactrouter.com/)
+
+## 📦 Publicação
+
+O site está disponível em:
+👉 [https://mauricio-rosa.github.io/lfr-demolition/](https://mauricio-rosa.github.io/lfr-demolition/)
+
+## ✅ Otimização para Motores de Busca (SEO)
+
+Para facilitar a indexação do site no Google e outros buscadores, foram incluídos os seguintes arquivos na pasta `/public`:
+
+### 🔍 `robots.txt`
+
+Informa aos robôs de busca que o conteúdo pode ser indexado, e aponta para o sitemap:
+
+```txt
+User-agent: *
+Allow: /
+Sitemap: https://mauricio-rosa.github.io/lfr-demolition/sitemap.xml
+```

@@ -1,6 +1,7 @@
 // src/pages/Automacao/index.jsx
 import useHelmetMeta from "@/hooks/useHelmetMeta";
 import React, { useRef, useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import {
   FaLinkedin,
   FaGithub,
@@ -15,11 +16,11 @@ import PI from "@/constants/personalInfo";
 import LINKS from "@/constants/ExternalLinks";
 import "./styles.css";
 
-function BudgetContact() {
+function Budget() {
+  const { t } = useTranslation();
     const helmet = useHelmetMeta({
-    title: "Contact | Mauricio F.R.",
-    description:
-      "Conheça a trajetória profissional de Maurício Freire Rosa, especialista em automação, engenharia elétrica e desenvolvimento de soluções digitais com Python, javascript, React e Power Platform.",
+    title: `${t("Navbar.Budget")} | ${t("Header.Title")}`,
+    description:t("Header.Budget_description"),
   });
 
 
@@ -31,4 +32,4 @@ function BudgetContact() {
   );
 }
 
-export default BudgetContact;
+export default Budget;

@@ -1,11 +1,19 @@
 {
-    "Navbar": {
-        "Home": "Início",
-        "Services": "serviços",
-        "Portfolio": "Portfolio",
-        "About": "Sobre",
-        "Contact": "Orçamento/Contato",
-        "Login": "Entrar",
-        "Logout": "Sair"
-    }
+  "Navbar": {
+    "Home": "Início",
+    "Services": "serviços",
+    "Portfolio": "Portfolio",
+    "About": "Sobre",
+    "Budget": "Orçamento",
+    "Login": "Entrar",
+    "Logout": "Sair"
+  },
+  "Header": {
+    "Title": "LFR Demolition",
+    "Home_description": "Soluções inteligentes para demolição e logística técnica.",
+    "About_description": "Conheça nossa história, propósito e experiência no setor.",
+    "Services_description": "Veja como ajudamos empresas com tecnologia e eficiência.",
+    "Portifolio_description": "Projetos que demonstram nossa capacidade e resultados.",
+    "Budget_description": "Solicite um orçamento personalizado para sua demanda."
+  }
 }

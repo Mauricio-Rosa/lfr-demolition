@@ -1,14 +1,15 @@
 // src/pages/Automacao/index.jsx
 import "./styles.css";
+import { useTranslation } from "react-i18next";
 import useHelmetMeta from "@/hooks/useHelmetMeta";
 import Article from "@/components/Article";
 
 
 function Services() {
+  const { t } = useTranslation();
   const helmet = useHelmetMeta({
-    title: "Agile | Mauricio F.R.",
-    description:
-      "Conheça o aplicativo Manutenção 30, uma solução inovadora para otimizar a gestão de manutenção na Ferroport, desenvolvida por mim. Alem disso, descubra como ele melhora a eficiência operacional e a qualidade no atendimento às demandas de manutenção.",
+    title: `${t("Navbar.Services")} | ${t("Header.Title")}`,
+    description:t("Header.Services_description"),
   });
   return (
     <>
