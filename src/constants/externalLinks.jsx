@@ -1,10 +1,10 @@
 const EXTERNAL_LINKS = {
-  WHATSAPP: "https://wa.me/+5522997363572",
-  LINKEDIN: "https://www.linkedin.com/in/mauriciofreirerosa/",
-  GITHUB: "https://github.com/Mauricio-Rosa",
-  INSTAGRAM: "https://www.instagram.com/mauricio_ros4/",
-  EMAIL: "mailto:mauricio.net.rosa@gmail.com",
-  MY_DOMAIN: "https://mauriciorosa.dev",
+  WHATSAPP: "https://wa.me/+12397919413",
+  // LINKEDIN: "https://www.linkedin.com/in/mauriciofreirerosa/",
+  // GITHUB: "https://github.com/Mauricio-Rosa",
+  INSTAGRAM: "https://www.instagram.com/lfrdemolition/",
+  EMAIL: "mailto:lfrdemolition@gmail.com",
+  MY_DOMAIN: "https://lfrdemolition.com/",
 };
 
 export default EXTERNAL_LINKS;

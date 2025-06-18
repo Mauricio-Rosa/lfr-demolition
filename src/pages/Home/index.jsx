@@ -17,6 +17,10 @@ import LFR_8 from "@/assets/a_webp/LFR_8.webp";
 import LFR_9 from "@/assets/a_webp/LFR_9.webp";
 import LFR_10 from "@/assets/a_webp/LFR_10.webp";
 
+import Video1 from "@/assets/videos/floor_removal.mp4";
+import Video2 from "@/assets/videos/selective-demolition.mp4";
+import Video3 from "@/assets/videos/dustless_tile_removal.mp4";
+
 import PI from "@/constants/personalInfo";
 
 import Button from "@/components/Button";
@@ -93,6 +97,17 @@ function Home() {
         <div className="funnel">
           <h3>{t("Funnels.Services.Title")}</h3>
           <p>{t("Funnels.Services.Description")}</p>
+          <video
+            className="video-card"
+            src={Video1}
+            autoPlay
+            muted
+            loop
+            playsInline
+            controls
+            preload="auto"
+          >
+          </video>
 
           <Button
             type="button"
@@ -103,6 +118,17 @@ function Home() {
         <div className="funnel">
           <h3>{t("Funnels.Budget.Title")}</h3>
           <p>{t("Funnels.Budget.Description")}</p>
+          <video
+            className="video-card"
+            src={Video2}
+            autoPlay
+            muted
+            loop
+            playsInline
+            controls
+            preload="auto"
+          >
+          </video>
 
           <Button
             type="button"
@@ -113,6 +139,17 @@ function Home() {
         <div className="funnel">
           <h3>{t("Funnels.Portfolio.Title")}</h3>
           <p>{t("Funnels.Portfolio.Description")}</p>
+          <video
+            className="video-card"
+            src={Video3}
+            autoPlay
+            muted
+            loop
+            playsInline
+            controls
+            preload="auto"
+          >
+          </video>
 
           <Button
             type="button"

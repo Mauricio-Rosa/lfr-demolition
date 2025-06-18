@@ -53,5 +53,17 @@
     "Date": "Data não informada",
     "SeeMore": "ver mais",
     "SeeLess": "ver menos"
+  },
+  "About":{
+    "Title":"Entre em contato",
+    "CallToAcction": "Ficarei feliz em ouvir de você! Preencha o formulário abaixo ou entre em contato diretamente.",
+    "Name":"Nome",
+    "NameDesc":"Insira o seu nome",
+    "Email":"E-mail",
+    "EmailDesc":"Insira o seu nome e-mail",
+    "Message":"Mensagem",
+    "MessageDesc":"Digite a sua mensagem",
+    "Send":"Enviar",
+    "CallToAcction2":"Ou se preferir, pelas redes sociais"
   }
 }

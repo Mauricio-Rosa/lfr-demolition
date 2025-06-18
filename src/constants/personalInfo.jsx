@@ -1,10 +1,10 @@
 const PERSONAL_INFO = {
-  NAME: "Maurício Freire Rosa",
-  PHONE: "+55 22 997363572",
-  EMAIL: "mauricio.net.rosa@gmail.com",
-  CURRENT_ROLE: "Analista de automação Jr.",
-  CURRENT_COMPANY: "Ferroport",
-  CURRENT_LOCATION: "Porto do Açu, RJ • Brasil",
+  NAME: "Leonardo de Freire Rosa",
+  PHONE: "+1 (239) 791 9413",
+  EMAIL: "lfrdemolition@gmail.com",
+  CURRENT_ROLE: "Owner",
+  CURRENT_COMPANY: "LFR",
+  CURRENT_LOCATION: "7539 Sika Deer Way Fort Myers, FL 33966",
 };
 
 export default PERSONAL_INFO;

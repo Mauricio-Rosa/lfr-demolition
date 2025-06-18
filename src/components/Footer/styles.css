@@ -46,6 +46,18 @@
   transition: var(--transition);
 }
 
+.footer-botton{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.licence-img{
+  height: 50px;
+  width: auto;
+}
+
 /* Responsividade para telas pequenas */
 @media (max-width: 480px) {
   .footer {

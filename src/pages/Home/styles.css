@@ -102,6 +102,9 @@
   background-color: var(--color-bg);
   box-shadow: var(--box-shadow);
   transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .funnel:hover {
@@ -121,11 +124,23 @@
   font-size: var(--font-sm);
 }
 
+.video-card {
+  width: 100%;
+  max-width: 480px;
+  margin-bottom: 10px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+  object-fit: cover;
+  aspect-ratio: 16 / 9;
+}
+
 @media (min-width: 640px) {
   .about-header {
     flex-direction: row;
     text-align: left;
     align-items: center;
   }
+  
 }
 

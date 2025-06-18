@@ -53,5 +53,17 @@
     "Date": "Date not informed",
     "SeeMore": "See more",
     "SeeLess": "See less"
+  },  
+  "About": {
+    "Title": "Get in Touch",
+    "CallToAcction": "I'd love to hear from you! Please fill out the form below or contact me directly.",
+    "Name": "Name",
+    "NameDesc": "Enter your name",
+    "Email": "Email",
+    "EmailDesc": "Enter your email",
+    "Message": "Message",
+    "MessageDesc": "Type your message",
+    "Send": "Send",
+    "CallToAcction2": "Or if you prefer, through social media"
   }
 }

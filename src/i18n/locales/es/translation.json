@@ -1,0 +1,69 @@
+{
+  "Navbar": {
+    "Home": "Inicio",
+    "Services": "Servicios",
+    "Portfolio": "Portafolio",
+    "About": "Sobre Nosotros",
+    "Budget": "Presupuesto",
+    "Login": "Iniciar Sesión",
+    "Logout": "Cerrar Sesión"
+  },
+  "Header": {
+    "Title": "LFR Demolition",
+    "Home_description": "Soluciones inteligentes para demolición y logística técnica.",
+    "About_description": "Conoce nuestra historia, propósito y experiencia en la industria.",
+    "Services_description": "Descubre cómo apoyamos a las empresas con tecnología y eficiencia.",
+    "Portifolio_description": "Proyectos que demuestran nuestras capacidades y resultados.",
+    "Budget_description": "Solicita una cotización personalizada adaptada a tus necesidades."
+  },
+  "Footer": {
+    "Name": "Déjanos el trabajo pesado",
+    "Contact": {
+      "Title": "Contáctanos",
+      "Description": "¿Tienes preguntas o necesitas ayuda? Ponte en contacto con nosotros en cualquier momento."
+    },
+    "Legal": {
+      "Terms": "Términos del Servicio",
+      "Privacy": "Todos los derechos reservados"
+    }
+  },
+  "Funnels": {
+    "Services": {
+      "Title": "Qué Hacemos",
+      "Description": "Explora nuestra gama completa de servicios de demolición y remoción de pisos, adaptados para proyectos residenciales y comerciales.",
+      "Button": "Ver Más"
+    },
+    "Budget": {
+      "Title": "Obtén una Cotización Gratis",
+      "Description": "¿Planeando un proyecto? Hablemos. Solicita una cotización rápida y sin compromiso, personalizada para ti.",
+      "Button": "Solicitar Cotización"
+    },
+    "Portfolio": {
+      "Title": "Nuestro Trabajo",
+      "Description": "Explora nuestro portafolio para ver la calidad y variedad de nuestros proyectos de demolición.",
+      "Button": "Ver Portafolio"
+    }
+  },
+  "SearchInput": {
+    "Placeholder": "Buscar artículos...",
+    "Text": "Buscar"
+  },
+  "Article": {
+    "Title": "Título no encontrado",
+    "Date": "Fecha no informada",
+    "SeeMore": "Ver más",
+    "SeeLess": "Ver menos"
+  },
+  "About": {
+    "Title": "Ponte en Contacto",
+    "CallToAcction": "¡Me encantaría saber de ti! Por favor completa el formulario abajo o contáctame directamente.",
+    "Name": "Nombre",
+    "NameDesc": "Ingresa tu nombre",
+    "Email": "Correo electrónico",
+    "EmailDesc": "Ingresa tu correo electrónico",
+    "Message": "Mensaje",
+    "MessageDesc": "Escribe tu mensaje",
+    "Send": "Enviar",
+    "CallToAcction2": "O si lo prefieres, a través de las redes sociales"
+  }
+}

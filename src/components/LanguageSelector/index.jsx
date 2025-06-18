@@ -5,11 +5,12 @@ import "./styles.css";
 const languages = [
   { code: "pt", label: "Português-Brasil", flag: "https://flagcdn.com/w40/br.png" },
   { code: "en", label: "English", flag: "https://flagcdn.com/w40/us.png" },
-  // { code: "es", label: "Español", flag: "https://flagcdn.com/w40/es.png" }
+  { code: "es", label: "Español", flag: "https://flagcdn.com/w40/es.png" }
 ];
 
 const LanguageSelector = () => {
   const { i18n } = useTranslation();
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [search, setSearch] = useState("");
   const [alignRight, setAlignRight] = useState(false);
@@ -102,7 +103,7 @@ const LanguageSelector = () => {
           <input
             ref={searchRef}
             type="text"
-            placeholder="Buscar idioma..."
+            placeholder="..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             className="language-search"

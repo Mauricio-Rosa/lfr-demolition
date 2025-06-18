@@ -1,7 +1,7 @@
 .article {
   display: flex;
-  gap: 2rem;
-  margin: 2rem auto;
+  gap: 1rem;
+  margin: 1rem auto;
   padding: 1.5rem;
   max-width: 1200px;
   border-radius: 8px;
@@ -180,7 +180,7 @@
   }
 
   .article-image {
-    width: 80%;
+    width: 100%;
   }
   .modal-carousel {
     padding: 0;
