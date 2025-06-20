@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import SearchInput from "@/components/SearchInput";
+import MenuSidebar from "@/components/MenuSidebar";
 
 // Importa o AppRoutes centralizado
 import AppRoutes from "./routes";
@@ -14,8 +15,9 @@ function App() {
   return (
     <Router>
       <Header />
-      <Navigation />
-      <SearchInput />
+      {/* <Navigation /> 
+      <SearchInput /> */}
+      <MenuSidebar/>
       <main>
         <AppRoutes />
       </main>
