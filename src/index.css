@@ -32,6 +32,7 @@
 
   /* === Cores primárias (tema LFR Demolition) === */
   --color-primary: #fcc236;
+  --color-primary-fixed:#fcc236;
   --color-primary-dark: #d2a12e;
   --color-primary-light: #f5e7e0;
 
@@ -39,6 +40,7 @@
   --color-bg: #f0f0f0;
   --color-bg-button: #fcc236;
   --color-text: #1e1e1e;
+  --color-text-fixed: #1e1e1e;
   --color-text-link: #fcc236;
   --color-text-button: #ffffff;
   --color-text-light: #ffffff;

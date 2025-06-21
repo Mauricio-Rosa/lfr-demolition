@@ -8,6 +8,7 @@ import { MdAttachMoney } from "react-icons/md";
 import ferroLogo from "@/assets/a_webp/logo.webp";
 import ROUTES from "@/routes/routes";
 import { useTranslation } from "react-i18next";
+import PERSONAL_INFO from "@/constants/personalInfo";
 import "./styles.css";
 
 // Array centralizado das opções de menu
@@ -99,7 +100,7 @@ export default function MenuSidebar() {
 
       <nav className={`menu-container ${isOpen ? "open" : ""}`} role="navigation">
         <div className="menu-title">
-          <h1>Menu de opções</h1>
+          <h1>{t("Menu.Title")}</h1>
         </div>
         <ul className="menu-list">
           {menuItems.map((item) => (
@@ -111,7 +112,7 @@ export default function MenuSidebar() {
             </li>
           ))}
         </ul>
-        <div className="menu-footer">© {new Date().getFullYear()} Ferroport</div>
+        <div className="menu-footer">© {new Date().getFullYear()} {PERSONAL_INFO.CURRENT_COMPANY}</div>
       </nav>
     </>
   );

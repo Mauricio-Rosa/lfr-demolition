@@ -30,11 +30,11 @@
   padding: 3px;
   background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
   background-size: 300% 100%;
+  mask-composite: exclude;
+  pointer-events: none;
   animation: glowingEffect 1.5s linear infinite;
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  pointer-events: none;
 }
 
 @keyframes glowingEffect {
@@ -87,7 +87,7 @@
   left: -250px;
   width: 250px;
   height: 100vh; /* altura total da viewport */
-  background-color: #f9f9f9;
+  background-color: var(--color-bg);
   padding: 1rem;
   z-index: 1000;
   transition: all 0.3s ease-in-out;
@@ -112,8 +112,8 @@
 }
 
 .menu-title h1 {
-  color: var(--color-primary, #003366);
-  font-size: 1.2rem;
+  color: var(--color-text);
+  font-size: var(--font-2xl);
   margin: 0;
 }
 
@@ -134,8 +134,8 @@
 }
 
 .menu-list .menu-item .nav-icon {
-  font-size: 1.4rem;       /* tamanho dos ícones */
-  color: var(--color-primary, #003366);
+  font-size: var(--font-base);       /* tamanho dos ícones */
+  color: var(--color-text);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -147,7 +147,7 @@
 /* Opcional: cor do ícone muda junto com o texto no hover */
 .menu-item:hover .nav-icon,
 .menu-item:focus-within .nav-icon {
-  color: var(--color-hover, #007acc);
+  color: var(--color-hover);
 }
 
 /* Scrollbar Webkit (Chrome, Edge, Safari) */
@@ -167,12 +167,12 @@
 .menu-item {
   padding: 0.5rem 1rem;
   border-radius: 6px;
-  font-size: 1rem;
-  color: var(--color-primary, #003366);
   cursor: pointer;
   display: flex;
   align-items: center;
   transition: all 0.2s ease-in-out;
+  font-size: var(--font-base);
+  color: var(--color-text);
 }
 
 .menu-item .nav-link {
@@ -187,13 +187,13 @@
 
 .menu-item:hover,
 .menu-item:focus-within {
-  background-color: #eee;
-  color: var(--color-hover, #007acc);
+  background-color: var(--color-primary);
+  color: var(--color-hover);
   transform: translateX(4px);
 }
 
 .menu-item svg {
-  font-size: 1.2rem;
+  font-size: var(--font-xl);
   flex-shrink: 0;
 }
 
@@ -204,7 +204,7 @@
   padding: 1rem;
   border-top: 1px solid var(--color-border, #ccc);
   text-align: center;
-  font-size: 0.875rem;
+  font-size: var(--font-sm);
   color: #777;
 }
 
@@ -216,7 +216,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: var(--color-primary, #003366);
+  background-color: var(--color-primary);
   border-top: 1px solid var(--color-border, #ccc);
   z-index: 999;
   padding: 0.5rem 0;

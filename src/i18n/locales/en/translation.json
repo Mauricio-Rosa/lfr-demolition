@@ -16,6 +16,9 @@
     "Portifolio_description": "Projects that showcase our capabilities and results.",
     "Budget_description": "Request a custom quote tailored to your needs."
   },
+  "Menu": {
+    "Title": "Options Menu"
+  },
   "Footer": {
     "Name": "Leave the hard work to us",
     "Contact": {
@@ -48,12 +51,12 @@
     "Placeholder": "Search articles...",
     "Text": "Search"
   },
-  "Article":{
+  "Article": {
     "Title": "Title not found",
     "Date": "Date not informed",
     "SeeMore": "See more",
     "SeeLess": "See less"
-  },  
+  },
   "About": {
     "Title": "Get in Touch",
     "CallToAcction": "I'd love to hear from you! Please fill out the form below or contact me directly.",

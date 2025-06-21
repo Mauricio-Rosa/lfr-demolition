@@ -7,6 +7,7 @@ import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import SearchInput from "@/components/SearchInput";
 import MenuSidebar from "@/components/MenuSidebar";
+import ScrollToTop from "./components/ScrollToTop";
 
 // Importa o AppRoutes centralizado
 import AppRoutes from "./routes";
@@ -18,6 +19,7 @@ function App() {
       {/* <Navigation /> 
       <SearchInput /> */}
       <MenuSidebar/>
+      <ScrollToTop/>
       <main>
         <AppRoutes />
       </main>
