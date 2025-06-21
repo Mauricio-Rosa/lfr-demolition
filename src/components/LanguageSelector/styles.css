@@ -5,12 +5,17 @@
 }
 
 .language-button {
-  padding: 0.4rem 0.6rem;
+  padding: 0 !important; /* Remove o padding */
   background-color: transparent;
   border: none;
   cursor: pointer;
   font-size: var(--font-base);
   transition: var(--transition);
+  width: 32px;   /* Tamanho fixo opcional */
+  height: 32px;  /* Tamanho fixo opcional */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .language-dropdown {
@@ -78,10 +83,15 @@
 }
 
 .language-flag {
-  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji",
-    sans-serif;
-  font-size: var(--font-base);
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+  font-size: 22px; /* Ajuste conforme necessário */
   line-height: 1;
+  margin: 0;       /* Remove qualquer margem */
+  padding: 0;      /* Remove qualquer padding */
+  width: 40px;     /* Ajuste para o tamanho da bandeira */
+  height: 22px;
+  object-fit: contain;
+  display: block;
 }
 
 @media (max-width: 480px) {

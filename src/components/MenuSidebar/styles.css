@@ -87,7 +87,7 @@
   left: -250px;
   width: 250px;
   height: 100vh; /* altura total da viewport */
-  background-color: var(--color-bg);
+  background-color: transparent;
   padding: 1rem;
   z-index: 1000;
   transition: all 0.3s ease-in-out;
@@ -100,6 +100,7 @@
   left: 0;
   box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
   border-right: 1px solid var(--color-border, #ccc);
+  background-color: var(--color-bg)
 }
 
 /* ========================
@@ -208,6 +209,15 @@
   color: #777;
 }
 
+/* Quando o menu NÃO está aberto, bordas transparentes */
+.menu-container:not(.open) .menu-title {
+  border-bottom: 1px solid transparent;
+}
+
+.menu-container:not(.open) .menu-footer {
+  border-top: 1px solid transparent;
+}
+
 /* ========================
    BOTTOM NAVBAR - MOBILE
 ======================== */
@@ -221,7 +231,7 @@
   z-index: 999;
   padding: 0.5rem 0;
 }
-/*dfdfdfdf*/
+
 .bottom-nav-list {
   display: flex;
   overflow-x: auto;

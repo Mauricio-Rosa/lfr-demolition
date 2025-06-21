@@ -5,6 +5,7 @@ import { FaHome, FaTools } from "react-icons/fa";
 import { GiDemolish } from "react-icons/gi";
 import { GrUserWorker } from "react-icons/gr";
 import { MdAttachMoney } from "react-icons/md";
+import { FaRankingStar } from "react-icons/fa6";
 import ferroLogo from "@/assets/a_webp/logo.webp";
 import ROUTES from "@/routes/routes";
 import { useTranslation } from "react-i18next";
@@ -13,6 +14,12 @@ import "./styles.css";
 
 // Array centralizado das opções de menu
 const menuItems = [
+  {
+    key: "startscreen",
+    path: ROUTES.STARTSCREEN.path,
+    labelKey: "Navbar.StartScreen",
+    icon: <FaRankingStar />,
+  },
   {
     key: "home",
     path: ROUTES.HOME.path,

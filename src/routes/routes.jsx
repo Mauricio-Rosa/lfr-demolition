@@ -1,3 +1,4 @@
+import StartScreen from "@/pages/StartScreen"
 import Home from "@/pages/Home";
 import About from "@/pages/About";
 import Services from "@/pages/Services";
@@ -6,8 +7,13 @@ import Budget from "@/pages/Budget";
 
 // Rotas centralizadas
 const ROUTES = {
-  HOME: {
+  STARTSCREEN: {
     path: "/",
+    element: <StartScreen />,
+    label: "StartScreen",
+  },
+  HOME: {
+    path: "/Home",
     element: <Home />,
     label: "Home",
   },

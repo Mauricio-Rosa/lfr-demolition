@@ -1,6 +1,7 @@
 {
   "Navbar": {
-    "Home": "Início",
+    "StartScreen": "Início",
+    "Home": "Home",
     "Services": "serviços",
     "Portfolio": "Portfolio",
     "About": "Sobre",

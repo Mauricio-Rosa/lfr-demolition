@@ -2,6 +2,7 @@
 import { useTranslation } from "react-i18next";
 import useHelmetMeta from "@/hooks/useHelmetMeta";
 import Article from "@/components/Article";
+import Header from "@/components/Header";
 import "./styles.css";
 
 function Portifolio() {
@@ -13,7 +14,7 @@ function Portifolio() {
   return (
     <>
     {helmet}
-    
+    <Header/>
     </>
   );
 }

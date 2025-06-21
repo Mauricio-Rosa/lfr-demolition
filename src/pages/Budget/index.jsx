@@ -1,6 +1,7 @@
 // src/pages/Automacao/index.jsx
 import useHelmetMeta from "@/hooks/useHelmetMeta";
 import React, { useRef, useEffect, useState } from "react";
+import Header from "@/components/Header";
 import { useTranslation } from "react-i18next";
 import {
   FaLinkedin,
@@ -27,7 +28,7 @@ function Budget() {
   return (
     <>
     {helmet}
-    
+    <Header/>
     </>
   );
 }

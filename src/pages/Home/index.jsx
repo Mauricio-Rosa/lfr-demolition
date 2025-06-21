@@ -5,6 +5,7 @@ import useHelmetMeta from "@/hooks/useHelmetMeta";
 import Article from "@/components/Article";
 import { useNavigate } from "react-router-dom";
 import React, { useEffect, useRef } from "react";
+import Header from "@/components/Header";
 
 import LFR_1 from "@/assets/a_webp/LFR_1.webp";
 import LFR_2 from "@/assets/a_webp/LFR_2.webp";
@@ -39,6 +40,8 @@ function Home() {
       {helmet}
 
       {/* <VideoPlayer src={Main_video} title="We are LFR Demolition" loop={true} /> */}
+
+      <Header/>
 
       <Article
         title="Smart Demolition"

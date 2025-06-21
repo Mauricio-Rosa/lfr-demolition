@@ -1,6 +1,7 @@
 // src/pages/Automacao/index.jsx
 import useHelmetMeta from "@/hooks/useHelmetMeta";
 import { useTranslation } from "react-i18next";
+import Header from "@/components/Header";
 import React, { useRef, useEffect, useState } from "react";
 import {
   FaLinkedin,
@@ -70,6 +71,7 @@ function Contact() {
   return (
     <>
       {helmet}
+      <Header/>
       <section className="contact">
         {/* Título da seção */}
         <h1 className="contact-title">{t("About.Title")}</h1>
